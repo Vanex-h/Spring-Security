@@ -5,6 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
+import com.learn.spring.student.repository.UserRepository;
 
 import java.util.Optional;
 
@@ -18,7 +19,8 @@ public class UserSecurityDetailsService implements UserDetailsService {
     }
 
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        Optional<User> userOptional = userRepository.findByEmail(email);
+        Optional<User> userOptional = userRepository.findUserByEmail(email);
+        System.out.println("user" + userOptional.get().getUserName());
         if(userOptional.isPresent()){
             return new UserSecurityDetails(userOptional.get());
         }else{

@@ -1,15 +1,5 @@
 package com.learn.spring.student.config;
-import com.learn.spring.student.config.user.Role;
-import com.learn.spring.student.config.user.User;
-import com.learn.spring.student.config.user.UserRepository;
-import com.learn.spring.student.models.Student;
-import com.learn.spring.student.repository.StudentRepository;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.List;
 
 @Configuration
 public class StudentConfig {

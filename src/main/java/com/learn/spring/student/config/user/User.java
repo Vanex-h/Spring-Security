@@ -93,12 +93,12 @@ public class User {
         this.role = role;
     }
 
-    public User(Long id, String userName, String fullName, String email, String password, Role role) {
-        this.id = id;
-        this.userName = userName;
-        this.fullName = fullName;
-        this.email = email;
-        this.password = password;
-        this.role = role;
-    }
+//    public User(Long id, String userName, String fullName, String email, String password, Role role) {
+//        this.id = id;
+//        this.userName = userName;
+//        this.fullName = fullName;
+//        this.email = email;
+//        this.password = password;
+//        this.role = role;
+//    }
 }
